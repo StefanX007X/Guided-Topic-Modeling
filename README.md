@@ -27,7 +27,7 @@ If the installation with the .yml file does not work install the packages manual
 * Activate the virtual environment (conda activate gtm_py11)
 * cd to the folder containing gtm.py
 
-This command generates a topic of the size 100 words from the two seed words 'iphone' and 'steve_jobs': 
+This command generates a 100 word topic from the two seed words 'iphone' and 'steve_jobs': 
 
 *$python3 gtm.py --ps1 iphone --pw1 1.0 --ps2 steve_jobs --pw2 1.0 --size 100 --gravity 0.10*
 
