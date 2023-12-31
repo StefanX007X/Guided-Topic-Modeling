@@ -7,19 +7,20 @@ Guided Topic Modeling (GTM) enables the generation of comprehensive topic word c
 * Packages in requirements.yaml
 
 **Installation**  
-* Create a new virtual environment: conda 
+* Clone the repository and cd to the folder containing the requirements.yml file.  
+* Create a new virtual environment with the command:  
+  conda env create -f requirements.yml  
 
 
 ## Quick start
-* Clone the repository and activate the virtual environment (e.g. conda activate gtm_py11)
+* Activate the virtual environment (e.g. conda activate gtm_py11)
 * cd to the folder containing gtm.py
 
 $python3 gtm.py --ps1 iphone --pw1 1.0 --ps2 steve_jobs --pw2 1.0 --size 100 --gravity 0.10
 
 This command generates a topic of 100 words from the two seed words 'iphone' and 'steve_jobs'. 
 
-**Agruments:**  
-Required:  
+**Required Agruments:**  
 --ps1      ... positive seed word 1  
 --ps2      ... positive seed word 1  
 --pw1      ... weight of the first positive seed word  
@@ -27,7 +28,7 @@ Required:
 --size     ... topic size  
 --gravity  ... gravity parameter  
 
-Optional:   
+**Optional Agruments:**  
 --ns1      ... negative seed word 1  
 --ns2      ... negative seed word 1  
 --nw1      ... weight of the first negative seed word  
@@ -39,6 +40,7 @@ Optional:
 
 **Further notes**  
 * All words in the vocabulary are lowercase
+* For MAC M1 chips and later also install ... to supress the warning
 
 
 ## Documentation
