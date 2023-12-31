@@ -11,12 +11,14 @@ Guided Topic Modeling (GTM) enables the generation of comprehensive topic word c
 
 
 ## Quick start
-* Clone the repository and activate the virtual environment (e.g. conda activate gtm)
+* Clone the repository and activate the virtual environment (e.g. conda activate gtm_py11)
 * cd to the folder containing gtm.py
 
 $python3 gtm.py --ps1 iphone --pw1 1.0 --ps2 steve_jobs --pw2 1.0 --size 100 --gravity 0.10
 
-**Agruments:**
+This command generates a topic of 100 words from the two seed words 'iphone' and 'steve_jobs'. 
+
+**Agruments:**  
 Required:  
 --ps1      ... positive seed word 1
 --ps2      ... positive seed word 1
@@ -30,6 +32,9 @@ Optional:
 --ns2      ... negative seed word 1
 --nw1      ... weight of the first negative seed word
 --nw2      ... weight of the second negative seed word
+
+**Output:**  
+* 
 
 
 **Further notes**  
