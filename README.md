@@ -50,8 +50,6 @@ This command generates a topic of the size 100 words from the two seed words 'ip
 **Further notes**  
 * All words in the vocabulary are lowercase
 
-**Reference:**
-Dangl, Thomas and Salbrechter, Stefan, Guided Topic Modeling with Word2Vec: A Technical Note. Available at SSRN: <a target="_blank" href="https://ssrn.com/abstract=4575985">https://ssrn.com/abstract=4575985</a>
 
 
 ## Documentation
@@ -92,3 +90,7 @@ To train the Word2Vec model we use the Python Gensim library. These embeddings a
 
 **Phrases Model for Bigrams**
 We trained a Gensim Phrases model on the Thomson Reuters news data from 1996 to 2017. Apply this model on your text data to identify the same bigrams as present in the GTM topics.
+
+
+**Reference:**
+Dangl, Thomas and Salbrechter, Stefan, Guided Topic Modeling with Word2Vec: A Technical Note. Available at SSRN: <a target="_blank" href="https://ssrn.com/abstract=4575985">https://ssrn.com/abstract=4575985</a>
