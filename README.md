@@ -13,12 +13,12 @@ Guided Topic Modeling (GTM) enables the generation of comprehensive topic word c
 
 If the installation with the .yml file does not work install the packages manually:  
 * Create a new environment: *conda create -n gtm_py11 python=3.11.4*    
-* conda activate gtm_py11  
-* conda install numpy  
-* conda install pandas  
-* conda install scipy  
-* conda install wordcloud  
-* conda install -c conda-forge faiss  
+* *conda activate gtm_py11*  
+* *conda install numpy*  
+* *conda install pandas*  
+* *conda install scipy*  
+* *conda install wordcloud*  
+* *conda install -c conda-forge faiss*  
 
 ## Quick start
 * Activate the virtual environment (conda activate gtm_py11)
@@ -43,13 +43,15 @@ This command generates a topic of the size 100 words from the two seed words 'ip
 --nw2      ... weight of the second negative seed word  
 
 **Output:**  
-* 
-
+* topic.csv in ./output/  
+* WordCloud.png in ./output/WordClouds/  
+* Log file in ./logs/  
 
 **Further notes**  
 * All words in the vocabulary are lowercase
-* To supress the Intel MKL WARNING for MAC ARM chips install: 
 
+**Reference:**
+Dangl, Thomas and Salbrechter, Stefan, Guided Topic Modeling with Word2Vec: A Technical Note. Available at SSRN: <a href="https://ssrn.com/abstract=4575985">https://ssrn.com/abstract=4575985</a>
 
 ## Documentation
 
