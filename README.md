@@ -30,7 +30,7 @@ This command generates a topic of the size 100 words from the two seed words 'ip
 
 **Required Agruments:**  
 --ps1      ... positive seed word 1  
---ps2      ... positive seed word 1  
+--ps2      ... positive seed word 2  
 --pw1      ... weight of the first positive seed word  
 --pw2      ... weight of the second positive seed word  
 --size     ... topic size  
@@ -38,7 +38,7 @@ This command generates a topic of the size 100 words from the two seed words 'ip
 
 **Optional Agruments:**  
 --ns1      ... negative seed word 1  
---ns2      ... negative seed word 1  
+--ns2      ... negative seed word 2  
 --nw1      ... weight of the first negative seed word  
 --nw2      ... weight of the second negative seed word  
 
