@@ -4,7 +4,7 @@ Guided Topic Modeling (GTM) enables the generation of comprehensive topic word c
 **Requirements:**  
 * Python 3.11.4
 * Conda
-* Packages in requirements.yaml
+* Packages in requirements.yml
 
 **Installation**  
 * Clone the repository and cd to the folder containing the requirements.yml file.  
