@@ -20,18 +20,18 @@ This command generates a topic of 100 words from the two seed words 'iphone' and
 
 **Agruments:**  
 Required:  
---ps1      ... positive seed word 1
---ps2      ... positive seed word 1
---pw1      ... weight of the first positive seed word
---pw2      ... weight of the second positive seed word
---size     ... topic size
---gravity  ... gravity parameter
+--ps1      ... positive seed word 1  
+--ps2      ... positive seed word 1  
+--pw1      ... weight of the first positive seed word  
+--pw2      ... weight of the second positive seed word  
+--size     ... topic size  
+--gravity  ... gravity parameter  
 
-Optional:  
---ns1      ... negative seed word 1
---ns2      ... negative seed word 1
---nw1      ... weight of the first negative seed word
---nw2      ... weight of the second negative seed word
+Optional:   
+--ns1      ... negative seed word 1  
+--ns2      ... negative seed word 1  
+--nw1      ... weight of the first negative seed word  
+--nw2      ... weight of the second negative seed word  
 
 **Output:**  
 * 
