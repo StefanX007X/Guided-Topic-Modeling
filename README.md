@@ -1,5 +1,5 @@
 # Guided-Topic-Modeling
-Guided Topic Modeling (GTM) enables the generation of comprehensive topic clusters (i.e. topic dictionaries) for a broad range of topics.
+Guided Topic Modeling (GTM) enables the generation of comprehensive topic word clusters (i.e. topic dictionaries) for a broad range of topics.
 
 **Requirements:**  
 * Python 3.11.4
@@ -7,13 +7,33 @@ Guided Topic Modeling (GTM) enables the generation of comprehensive topic cluste
 * Packages in requirements.yaml
 
 **Installation**  
-*Create a new virtual environment: conda 
-
-The command-line interface is as follows:
+* Create a new virtual environment: conda 
 
 
-**Further notes**
-*All words in the vocabulary are lowercase
+## Quick start
+* Clone the repository and activate the virtual environment (e.g. conda activate gtm)
+* cd to the folder containing gtm.py
+
+$python3 gtm.py --ps1 iphone --pw1 1.0 --ps2 steve_jobs --pw2 1.0 --size 100 --gravity 0.10
+
+**Agruments:**
+Required:  
+--ps1      ... positive seed word 1
+--ps2      ... positive seed word 1
+--pw1      ... weight of the first positive seed word
+--pw2      ... weight of the second positive seed word
+--size     ... topic size
+--gravity  ... gravity parameter
+
+Optional:  
+--ns1      ... negative seed word 1
+--ns2      ... negative seed word 1
+--nw1      ... weight of the first negative seed word
+--nw2      ... weight of the second negative seed word
+
+
+**Further notes**  
+* All words in the vocabulary are lowercase
 
 
 ## Documentation
