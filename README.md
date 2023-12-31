@@ -40,7 +40,7 @@ This command generates a topic of the size 100 words from the two seed words 'ip
 
 **Further notes**  
 * All words in the vocabulary are lowercase
-* For MAC M1 chips and later also install ... to supress the warning
+* To supress the Intel MKL WARNING for MAC ARM chips install: 
 
 
 ## Documentation
