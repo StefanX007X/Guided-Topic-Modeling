@@ -51,9 +51,12 @@ This command generates a topic of the size 100 words from the two seed words 'ip
 * All words in the vocabulary are lowercase
 
 **Reference:**
-Dangl, Thomas and Salbrechter, Stefan, Guided Topic Modeling with Word2Vec: A Technical Note. Available at SSRN: <a href="https://ssrn.com/abstract=4575985">https://ssrn.com/abstract=4575985</a>
+Dangl, Thomas and Salbrechter, Stefan, Guided Topic Modeling with Word2Vec: A Technical Note. Available at SSRN: <a target="_blank" href="https://ssrn.com/abstract=4575985">https://ssrn.com/abstract=4575985</a>
+
 
 ## Documentation
+
+Guided Topic Modeling (GTM) is based on word embeddings that are obtained from a Word2Vec model which was trained on 10 million Thomson Reuters news articles (2.5 billion words) covering the period from 1996 to 2017. The vocabulary consists in total of 190.323 unique unigrams (single words) and bigrams (word pairs).
 
 ### Topic Generation
 
@@ -76,3 +79,16 @@ Gravity allows to control how easily the topic is allowed to drift away from the
 Topic size is pretty much self-explaining, it defines the number of words collected for a specific topic.
 
 
+### Word Embeddings
+
+The hyperparameters of the Word2Vec algorithm are specifically adapted for the task of topic modeling. Thus we consider a rather low vector dimension of 64 to avoid data sparsity in vector space (curse of dimensionality). This also avoids the issue of too specific topic clusters we observed when working with higher-dimensional vectors. Also, for the task of topic modeling in mind we use the CBOW algorithm with a rather large window size of 18.
+
+Standard Word2Vec embeddings do not contain any information about the word polarity which makes them unsuitable for the task of sentiment analysis. We trained and adapted Word2Vec embeddings, primarily for the financial domain. Thus, words that are considered as positive or negative in the financial context. Within a fully data driven method we take the feedback of the stock market to identify positive and negative words. We perform a PCA on the word embeddings obtained from Word2Vec an replace the least informative dimensions with the word polarity measure. Using these adapted embeddings allows the generation of polar topics, i.e. by defining the seed words "rise" and "surge" (positive topic) or "fall" and "decline" (negative topic) we obtain strictly polar topics.
+
+### Models
+
+**Polar Word Embeddings**  
+To train the Word2Vec model we use the Python Gensim library. These embeddings are further enhanced by incorporating a measure of sentiment (we use the feedback of the stock market to obtain polar word embeddings), which allows a differentiation between positive and negative words. Details can be found in the <a target="_blank" href="https://ssrn.com/abstract=4575985">research paper</a> (Section 5.2.4 Polar Word Embeddings).
+
+**Phrases Model for Bigrams**
+We trained a Gensim Phrases model on the Thomson Reuters news data from 1996 to 2017. Apply this model on your text data to identify the same bigrams as present in the GTM topics.
