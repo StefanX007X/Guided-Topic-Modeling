@@ -85,7 +85,7 @@ The hyperparameters of the Word2Vec algorithm are specifically adapted for the t
 
 Standard Word2Vec embeddings do not contain any information about the word polarity which makes them unsuitable for the task of sentiment analysis. We trained and adapted Word2Vec embeddings, primarily for the financial domain. Thus, words that are considered as positive or negative in the financial context. Within a fully data driven method we take the feedback of the stock market to identify positive and negative words. We perform a PCA on the word embeddings obtained from Word2Vec an replace the least informative dimensions with the word polarity measure. Using these adapted embeddings allows the generation of polar topics, i.e. by defining the seed words "rise" and "surge" (positive topic) or "fall" and "decline" (negative topic) we obtain strictly polar topics.
 
-### Models
+### Model Data
 
 **Polar Word Embeddings**  
 To train the Word2Vec model we use the Python Gensim library. These embeddings are further enhanced by incorporating a measure of sentiment (we use the feedback of the stock market to obtain polar word embeddings), which allows a differentiation between positive and negative words. Details can be found in the <a target="_blank" href="https://ssrn.com/abstract=4575985">research paper</a> (Section 5.2.4 Polar Word Embeddings).
