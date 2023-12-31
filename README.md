@@ -11,6 +11,14 @@ Guided Topic Modeling (GTM) enables the generation of comprehensive topic word c
 * Create a new virtual environment with the command:  
   conda env create -f requirements.yml  
 
+If the installation with the .yml file does not work install the packages manually:  
+* Create a new environment: conda create -n gtm_py11 python=3.11.4  
+* conda activate gtm_py11  
+* conda install numpy  
+* conda install pandas  
+* conda install scipy  
+* conda install wordcloud  
+* conda install -c conda-forge faiss  
 
 ## Quick start
 * Activate the virtual environment (conda activate gtm_py11)
