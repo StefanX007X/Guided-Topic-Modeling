@@ -94,9 +94,9 @@ Standard Word2Vec embeddings do not contain any information about the word polar
 **Polar Word Embeddings**  
 To train the Word2Vec model we use the Python Gensim library. These embeddings are further enhanced by incorporating a measure of sentiment (we use the feedback of the stock market to obtain polar word embeddings), which allows a differentiation between positive and negative words. Details can be found in the <a target="_blank" href="https://ssrn.com/abstract=4575985">research paper</a> (Section 5.2.4 Polar Word Embeddings).
 
-**Phrases Model for Bigrams**
-We trained a Gensim Phrases model on the Thomson Reuters news data from 1996 to 2017. Apply this model on your text data to identify the same bigrams as present in the GTM topics.
-
+**Phrases Model for Bigrams**  
+We trained a <a href="https://radimrehurek.com/gensim/models/phrases.html" target="_blank">Gensim Phrases</a> model on the Thomson Reuters news data from 1996 to 2017. Apply this model on your text data to identify the same bigrams as present in the GTM topics.
+The trained Phrases Model is located in ./models/bigram_phrase_model_1996-2017.pkl
 
 **Reference:**  
 Dangl, Thomas and Salbrechter, Stefan, Guided Topic Modeling with Word2Vec: A Technical Note. Available at SSRN: <a target="_blank" href="https://ssrn.com/abstract=4575985">https://ssrn.com/abstract=4575985</a>
