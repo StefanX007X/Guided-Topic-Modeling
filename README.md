@@ -11,7 +11,7 @@ Guided Topic Modeling (GTM) enables the generation of comprehensive topic word c
 * Create a new virtual environment with the command:  
   *conda env create -f requirements.yml*
 * Download the pre-trained Word2Vec embeddings:  
-  <a href="https://drive.google.com/drive/folders/1AN1duLRZqN5cQOBpO0Ym3g1cw6Vh_gps?usp=sharing", target="_blank">https://drive.google.com/drive/folders/1AN1duLRZqN5cQOBpO0Ym3g1cw6Vh_gps?usp=sharing</a>  
+  https://drive.google.com/drive/folders/1AN1duLRZqN5cQOBpO0Ym3g1cw6Vh_gps?usp=sharing
   and copy the downloaded .pkl file in ./models/
 
 If the installation with the .yml file does not work install the packages manually:  
