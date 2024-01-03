@@ -55,7 +55,7 @@ should this not work, try:
 
 <img width=500 height=auto src="https://github.com/quantista/Guided-Topic-Modeling/blob/main/output/Sample/topic_iphone_steve_jobs_15h_52m_01s.png?raw=true">
 
-The font size of the words in the Word Clouds indicates their closeness to the topic center. Words that appear large, are close to the center, smaller words are more distant to the topic center. 
+The font size of the words in the Word Cloud indicates their closeness to the topic center. Words that appear large, are close to the center, smaller words are more distant to the topic center. 
 
 
 **Further notes**  
