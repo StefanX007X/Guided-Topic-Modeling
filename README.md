@@ -54,7 +54,7 @@ should this not work, try:
 * Log file in ./logs/  
 
 
-![alt text]([https://github.com/quantista/Guided-Topic-Modeling/blob/main/output/Sample/topic_iphone_steve_jobs_15h_52m_01s.png?raw=true])
+<img src="https://github.com/quantista/Guided-Topic-Modeling/blob/main/output/Sample/topic_iphone_steve_jobs_15h_52m_01s.png?raw=true">
 
 
 **Further notes**  
