@@ -31,6 +31,9 @@ This command generates a 100 word topic from the two seed words 'iphone' and 'st
 
 *$python3 gtm.py --ps1 iphone --pw1 1.0 --ps2 steve_jobs --pw2 1.0 --size 100 --gravity 0.10*
 
+should this now work, try:  
+*>python gtm.py --ps1 iphone --pw1 1.0 --ps2 steve_jobs --pw2 1.0 --size 100 --gravity 0.10*
+
 **Required Agruments:**  
 --ps1      ... positive seed word 1  
 --ps2      ... positive seed word 2  
