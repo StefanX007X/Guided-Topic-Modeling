@@ -53,6 +53,10 @@ should this not work, try:
 * WordCloud.png in ./output/WordClouds/  
 * Log file in ./logs/  
 
+
+![alt text]([https://github.com/quantista/Guided-Topic-Modeling/blob/main/output/Sample/topic_iphone_steve_jobs_15h_52m_01s.png])
+
+
 **Further notes**  
 * All words in the vocabulary are lowercase
 
