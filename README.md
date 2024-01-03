@@ -59,7 +59,7 @@ The font size of the words in the Word Cloud indicates their closeness to the to
 
 
 **Further notes**  
-* All words in the vocabulary are lowercase
+* All words in the vocabulary are lowercase. Bigrams are seperated by an underscore, e.g. steve_jobs.
 
 
 
