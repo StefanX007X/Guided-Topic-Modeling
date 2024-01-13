@@ -65,7 +65,7 @@ The font size of the words in the Word Cloud indicates their closeness to the to
 
 ## Documentation
 
-Guided Topic Modeling (GTM) is based on word embeddings that are obtained from a Word2Vec model which was trained on 10 million Thomson Reuters news articles (2.5 billion words) covering the period from 1996 to 2017. The vocabulary consists in total of 190.323 unique unigrams (single words) and bigrams (word pairs).
+Guided Topic Modeling (GTM) is based on word embeddings that are obtained from a Word2Vec model which is trained on 10 million Thomson Reuters news articles (2.5 billion words) covering the period from 1996 to 2017. The vocabulary consists in total of 190.323 unique unigrams (single words) and bigrams (word pairs).
 
 ### Topic Generation
 
